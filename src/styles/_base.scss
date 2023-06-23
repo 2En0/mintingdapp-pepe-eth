@@ -1,0 +1,115 @@
+:root {
+  --mc1: #01a3f4;
+  --mc2: #feeb1a;
+  --hc: #fff;
+  --bc: #fff;
+  --hff: 'Heebo', sans-serif;
+  --bff: 'Nunito', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html {
+  // font-family: 'Long Cang', cursive;
+  scroll-behavior: smooth !important;
+
+}
+
+.newfont {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
+.coin {
+  -webkit-animation: shake-vertical 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite both;
+  animation: shake-vertical 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite both;
+}
+
+@-webkit-keyframes shake-vertical {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+
+@keyframes shake-vertical {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+
+body {
+  background-color: #23162c !important;
+  background-image: radial-gradient(circle,#3b8348 0,#132d18 100%) !important;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.text--3d {
+  filter: drop-shadow(2px 5px 0px #0d142f);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0d142f;
+}
+
+.color--gradient-y {
+  background: linear-gradient(0deg, #f6fff2 0%, #c3ffa9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
