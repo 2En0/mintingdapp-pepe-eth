@@ -37,7 +37,7 @@ const Home: NextPage = () => {
     >
       <section
         className="relative flex flex-col items-center justify-center w-full 2xl:min-h-[90vh] min-h-[100vh]
-        bg-gradient-to-br from-green-900 via-transparent to-green-900"
+        bg-gradient-to-br from-[#062e17] via-transparent to-[#063a1b]"
         id="#home"
       >
         <img
@@ -74,16 +74,18 @@ const Home: NextPage = () => {
               <img src="img/twitter.png" alt="twitter" />
             </a>
           </ul>
-          <button className="hover:translate-y-1 h-[58px] text-xl text-black no-underline transition-all rounded-md shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100 duration-500">
-            <span className="flex gap-2 font-normal">{"Mint now"}</span>
-          </button>
+          <Link href="/mint" passHref>
+            <button className="my-10 hover:translate-y-1 h-[58px] text-xl text-black no-underline transition-all rounded-md shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100 duration-500">
+              <span className="flex gap-2 font-normal">{"Mint now"}</span>
+            </button>
+          </Link>
         </div>
       </section>
       <About />
-      {/* <RoadMap />
-      <Team />
       <Collection />
-      <Faq /> */}
+      <RoadMap />
+      {/* <Team />
+      <Faq />  */}
     </motion.section>
   );
 };

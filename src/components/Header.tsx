@@ -69,6 +69,8 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
+  console.log("router", router);
+
   return (
     <>
       <header
@@ -95,21 +97,33 @@ export default function Header() {
             </div>
           </Link>
           <ul className="absolute left-0 right-0 items-center justify-center hidden gap-10 xl:flex">
-            <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
-              Home
-            </li>
-            <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
-              About
-            </li>
-            <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
-              Collection
-            </li>
-            <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
-              RoadMap{" "}
-            </li>
-            <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
-              Team
-            </li>
+            <a href="/#">
+              <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
+                Home
+              </li>
+            </a>
+            <a href="/#about">
+              <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
+                About
+              </li>
+            </a>
+            <a href="/#collection">
+              <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
+                Collection
+              </li>
+            </a>
+
+            <a href="/#roadmap">
+              <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
+                RoadMap{" "}
+              </li>
+            </a>
+
+            <a href="/#team">
+              <li className="text-md font-bold text-white uppercase list-none transition-all duration-300 cursor-pointer hover:text-[#abff87]">
+                Team
+              </li>
+            </a>
           </ul>
 
           {account ? (
@@ -147,8 +161,7 @@ export default function Header() {
         <div className="fixed top-0 bottom-0 left-0 right-0 z-[60] items-center justify-center bg-black opacity-95 xl:hidden">
           <div className="flex items-center justify-end w-full px-3 py-4">
             <div
-              className="p-1 border-[1px] border-gray-300 hover:border-white duration-300 transition-all rounded-lg
-            cursor-pointer"
+              className="p-1 transition-all duration-300 border-gray-300 rounded-lg cursor-pointer hover:border-white"
               onClick={() => setMenuOpen(false)}
             >
               <IoMdClose color="white" size={"32px"} />
@@ -156,36 +169,36 @@ export default function Header() {
           </div>
           <div className="flex flex-col items-center justify-center w-full">
             <div className="flex flex-col justify-center gap-5 text-center lg:text-left lg:mx-0 lg:pl-4">
-              <div className="flex flex-col items-center justify-center gap-10">
+              <div className="flex flex-col items-center justify-center gap-10 newfont">
                 <Link href={"/"} passHref>
                   <li
                     className={`text-lg font-normal ${
-                      router.pathname === "/" ? "text-cyan-500" : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                      router.asPath === "/" ? "text-green-700" : "text-white"
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     Home
                   </li>
                 </Link>
-                <a href="#about">
+                <a href="/#about">
                   <li
                     className={`text-lg font-normal ${
-                      router.pathname === "/createraffle"
-                        ? "text-cyan-500"
+                      router.asPath === "/#about"
+                        ? "text-green-700"
                         : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     About
                   </li>
                 </a>
-                <a href="#collection">
+                <a href="/#collection">
                   <li
                     className={`text-lg font-normal ${
-                      router.pathname === "/createraffle"
-                        ? "text-cyan-500"
+                      router.asPath === "/#collection"
+                        ? "text-green-700"
                         : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     Collection
@@ -194,10 +207,10 @@ export default function Header() {
                 <a href={"/#roadmap"}>
                   <li
                     className={`text-lg font-normal ${
-                      router.pathname === "/createraffle"
-                        ? "text-cyan-500"
+                      router.asPath === "/#roadmap"
+                        ? "text-green-700"
                         : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     Roadmap
@@ -206,10 +219,10 @@ export default function Header() {
                 <a href={"/#team"}>
                   <li
                     className={`text-lg font-normal ${
-                      router.pathname === "/createraffle"
-                        ? "text-cyan-500"
+                      router.asPath === "/#team"
+                        ? "text-green-700"
                         : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     Team
@@ -219,31 +232,21 @@ export default function Header() {
                   <li
                     className={`text-lg font-normal ${
                       router.pathname === "/mint"
-                        ? "text-cyan-500"
+                        ? "text-green-700"
                         : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
+                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-green-700`}
                     onClick={() => setMenuOpen(false)}
                   >
                     Mint
                   </li>
                 </Link>
-                <Link href={"/claim"} passHref>
-                  <li
-                    className={`text-lg font-normal ${
-                      router.pathname === "/claim"
-                        ? "text-cyan-500"
-                        : "text-white"
-                    } uppercase list-none transition-all duration-300 cursor-pointer hover:text-cyan-500`}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Claim
-                  </li>
-                </Link>
               </div>
+
               {account ? (
                 <button
                   onClick={() => disconnect()}
-                  className="px-2 py-3 text-white border-[1px] border-gray-400 rounded-lg backdrop-blur-sm font-normal bg-white bg-opacity-10"
+                  className="h-[58px] text-xl text-black no-underline transition-all duration-300 rounded-md 
+              shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100"
                 >
                   <span className="flex gap-2 font-normal text">
                     <FaWallet style={{ marginTop: "3%" }} />
@@ -253,7 +256,8 @@ export default function Header() {
               ) : (
                 <button
                   onClick={() => connect()}
-                  className="px-2 py-3 text-white bg-opacity-10 border-[1px] border-gray-400 rounded-lg backdrop-blur-sm font-normal bg-white"
+                  className="h-[58px] text-xl text-black no-underline transition-all duration-300 rounded-md
+               shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100"
                 >
                   <span className="flex gap-2 font-normal text">
                     {" "}

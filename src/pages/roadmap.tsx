@@ -6,178 +6,57 @@ import { AiFillStar } from "react-icons/ai";
 export default function RoadMap() {
   return (
     <section
-      className="relative flex flex-col items-center justify-center w-full bg-white py-[100px]"
-      id="#home"
+      className="relative flex flex-col items-center justify-center w-full py-[100px]"
+      id="roadmap"
     >
+      <img
+        src="/img/background.png"
+        className="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full opacity-5 -z-10"
+      />
       <div className="2xl:w-[1440px] xl:w-[1224px] lg:w-[900px] w-full flex items-center justify-center relative flex-col px-5">
-        <div className="flex flex-col items-center justify-center w-full gap-4 mt-10">
-          <h1 className="text-4xl font-bold text-green-500 newfont">Roadmap</h1>
-          <h1 className="text-[40px] font-bold text-gray-800 newfont uppercase text-center">
-            how it all started
+        <div className="flex flex-col items-center gap-3 my-5 section-header__content">
+          <h1 className="color--gradient-y text-[60px] uppercase newfont">
+            Roadmap
           </h1>
+          <p className="text-[#ecffe1] text-2xl text-center">
+            Lorem Ipsum Generator Generate Lorem Ipsum placeholder text.
+            <br />
+            Select the number of characters!
+          </p>
         </div>
-        <div className="grid w-full grid-cols-1 gap-5 pb-3 border-t-2 border-green-500 md:grid-cols-2">
-          <div className="flex items-start justify-start w-full gap-5 py-5">
-            <h1 className="text-green-500 text-[40px] font-bold">Q1</h1>
-            <div className="flex flex-col items-start justify-center gap-2">
-              <h1 className="text-xl font-bold text-gray-800 newfont">
-                Launching
-              </h1>
-
-              <p className="text-gray-400 text-md">
-                Pepechain is reshaping how the meme economy. We create a
-                conducive.
-              </p>
-            </div>
+        <div className="grid w-full gap-10 lg:grid-cols-3">
+          <div className="p-10 rounded-lg bg-gradient-to-r from-green-100 to-green-400">
+            <h1 className="text-[30px] text-black newfont">Phase 1</h1>
+            <p className="font-bold text-gray-800">- Launch</p>
+            <p className="font-bold text-gray-800">
+              - CoinGecko/Coinmarketcap Listings
+            </p>
+            <p className="font-bold text-gray-800">- 1,000+ Holders</p>
+            <p className="font-bold text-gray-800">
+              - Get $PEPE Trending on twitter with our memetic power
+            </p>
           </div>
-          <div className="grid grid-cols-2 gap-1 bg-green-500 bg-opacity-80">
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
+          <div className="p-10 rounded-lg bg-gradient-to-r from-green-100 to-green-400">
+            <h1 className="text-[30px] text-black newfont">Phase 2</h1>
+            <p className="font-bold text-gray-800">
+              - Community Partnerships Pepe Times digital newsletter
+            </p>
+            <p className="font-bold text-gray-800">
+              - Firmation of token gated discord group, Pepe Palace, for
+              holders, more details tba
+            </p>
+            <p className="font-bold text-gray-800">
+              - Get $PEPE Trending on twitter with our memetic power
+            </p>
           </div>
-        </div>
-        <div className="grid w-full grid-cols-1 gap-5 pb-3 border-t-2 border-green-500 md:grid-cols-2">
-          <div className="flex items-start justify-start w-full gap-5 py-5">
-            <h1 className="text-green-500 text-[40px] font-bold">Q2</h1>
-            <div className="flex flex-col items-start justify-center gap-2">
-              <h1 className="text-xl font-bold text-gray-800 newfont">
-                Stability
-              </h1>
-
-              <p className="text-gray-400 text-md">
-                Pepechain is reshaping how the meme economy. We create a
-                conducive.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-1 bg-green-500 bg-opacity-80">
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-          </div>
-        </div>
-        <div className="grid w-full grid-cols-1 gap-5 pb-3 border-t-2 border-green-500 md:grid-cols-2">
-          <div className="flex items-start justify-start w-full gap-5 py-5">
-            <h1 className="text-green-500 text-[40px] font-bold">Q3</h1>
-            <div className="flex flex-col items-start justify-center gap-2">
-              <h1 className="text-xl font-bold text-gray-800 newfont">
-                Sustainable Growth
-              </h1>
-
-              <p className="text-gray-400 text-md">
-                Pepechain is reshaping how the meme economy. We create a
-                conducive.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-1 bg-green-500 bg-opacity-80">
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-          </div>
-        </div>
-        <div className="grid w-full grid-cols-1 gap-5 pb-3 border-t-2 border-green-500 md:grid-cols-2">
-          <div className="flex items-start justify-start w-full gap-5 py-5">
-            <h1 className="text-green-500 text-[40px] font-bold">Q4</h1>
-            <div className="flex flex-col items-start justify-center gap-2">
-              <h1 className="text-xl font-bold text-gray-800 newfont">
-                Infinity and Beyond
-              </h1>
-
-              <p className="text-gray-400 text-md">
-                Pepechain is reshaping how the meme economy. We create a
-                conducive.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-1 bg-green-500 bg-opacity-80">
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <AiFillStar color="white" size={12} />
-              <p className="font-bold text-gray-700">
-                pepechain beta release
-              </p>{" "}
-            </div>
+          <div className="p-10 rounded-lg bg-gradient-to-r from-green-100 to-green-400">
+            <h1 className="text-[30px] text-black newfont">Phase 3</h1>
+            <p className="font-bold text-gray-800">- Pepe merch</p>
+            <p className="font-bold text-gray-800">- Pepe Academy</p>
+            <p className="font-bold text-gray-800">- Pepe Tools</p>
+            <p className="font-bold text-gray-800">
+              - T1 Exchange Listings 100,000+ holders
+            </p>
           </div>
         </div>
       </div>
