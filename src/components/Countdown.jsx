@@ -7,12 +7,12 @@ const Countdown = ({ endDateTime, onCanBreed, whiteListCounts }) => {
     return (
       <>
         {iscompleted || whiteListCounts >= 50 ? (
-          <div className="mt-5 text-2xl font-extrabold text-red-400 md:text-3xl animate-bounce">
+          <div className="mt-5 text-2xl font-extrabold text-red-400 md:text-3xl animate-bounce newfont">
             WHITLIST: SOLDOUT!
           </div>
         ) : (
           <>
-            <h1 className="text-xl text-white">WhiteList End : </h1>
+            <h1 className="text-xl text-white newfont">WhiteList End : </h1>
             <div className="mt-5 text-2xl font-extrabold text-red-400 md:text-3xl animate-bounce">
               <span>{days} D</span> :<span>{hours} H</span> :
               <span>{minutes} M</span> :<span>{seconds} S</span>

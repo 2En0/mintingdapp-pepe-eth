@@ -66,136 +66,73 @@ const CollectionSlider = () => {
     <>
       <Slider {...settings} className="my-10 slider">
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img2.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img2.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img3.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img3.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img4.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img4.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img5.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img5.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img6.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img6.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img7.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img7.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>
         </div>
         <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
+          <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]">
             <img
-              src={`/img/nft/v4-slider-img8.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img9.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img10.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img11.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img12.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img13.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img14.png`}
-              className="w-90 rounded-3xl"
-              alt="nftCollectionSlider"
-            />
-          </div>
-        </div>
-        <div className="px-3">
-          <div className="w-full p-2 border-2 border-[#11ac21] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl">
-            <img
-              src={`/img/nft/v4-slider-img15.png`}
-              className="w-90 rounded-3xl"
+              src={`/img/nft/v4-slider-img8.jpg`}
+              className="w-90 rounded-3xl rounded-tl-[15px] rounded-br-[30px] rounded-tr-[30px] rounded-bl-[30px]"
               alt="nftCollectionSlider"
             />
           </div>

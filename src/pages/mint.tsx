@@ -141,10 +141,10 @@ export default function Mint() {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
     >
-      <section className="relative flex flex-col w-full">
+      <section className="relative flex flex-col w-full bg-gradient-to-br from-[#062e17] via-transparent to-[#063a1b] 2xl:min-h-[90vh] min-h-[100vh]">
         <img
-          src="/img/home.jpg"
-          className="fixed top-0 bottom-0 object-cover w-full h-full -z-10"
+          src="/img/background.png"
+          className="fixed top-0 bottom-0 object-cover w-full h-full -z-10 opacity-10"
         />
         <div className="2xl:px-[300px] xl:px-[200px] lg:px-[100px] md:px-[100px] px-5 mt-[100px] lg:mt-[100px] w-full gap-5 pb-10">
           <Link href={"/"} passHref>
@@ -154,7 +154,7 @@ export default function Mint() {
           </Link>
           <div className="flex flex-col items-center justify-center w-full">
             <div className="xl:w-[500px] lg:w-[400px] w-[350px] md:w-[500px] p-2">
-              <div className="p-2 border-[1px] border-gray-400 rounded-xl bg-white bg-opacity-10 backdrop-blur-sm">
+              <div className="w-full p-2 border-7 border-[#3a963d] bg-white bg-opacity-10 backdrop-blur-md rounded-3xl rounded-tl-[80px] rounded-br-[80px] rounded-tr-[30px] rounded-bl-[30px]">
                 <Slider
                   {...settings}
                   className="mx-3 my-2"
@@ -164,7 +164,7 @@ export default function Mint() {
                     <img
                       src={data.imgurl}
                       key={index}
-                      className="object-cover w-full rounded-lg"
+                      className="object-cover w-full rounded-3xl rounded-tl-[80px] rounded-br-[80px] rounded-tr-[30px] rounded-bl-[30px]"
                     />
                   ))}
                 </Slider>
@@ -182,19 +182,16 @@ export default function Mint() {
                 />
               </div>
               <div className="flex items-center justify-center w-full mt-10">
-                <h1 className="text-xl font-normal text-center text-white">
-                  The FlareGod NFTs
+                <h1 className="text-xl font-extrabold text-center text-white uppercase">
+                  The PEPEZ NFTs
                   <br />
                   FlareGod Minting Cost = 999 FLR
                 </h1>
               </div>
               <div className="flex items-center justify-between w-full mt-5">
-                <div
-                  className={`px-6 py-4 text-xl font-bold text-center text-black transition-all duration-300 rounded-md ${
-                    mintCount <= 1
-                      ? "bg-gray-600 cursor-not-allowed"
-                      : "bg-gray-200 hover:bg-gray-400 cursor-pointer "
-                  }`}
+                <button
+                  className={`flex items-center justify-center cursor-pointer my-10 h-[58px] text-xl text-black no-underline transition-all rounded-md shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100 duration-500`}
+                  disabled={mintCount <= 1}
                   onClick={() =>
                     mintCount <= 1
                       ? setMintCount(1)
@@ -202,14 +199,11 @@ export default function Mint() {
                   }
                 >
                   {`-`}
-                </div>{" "}
+                </button>{" "}
                 <h1 className="text-xl font-bold text-white">{mintCount}</h1>
-                <div
-                  className={`px-6 py-4 text-xl font-bold text-center text-black transition-all duration-300 rounded-md ${
-                    mintCount >= maxMintCount
-                      ? "bg-gray-600 cursor-not-allowed"
-                      : "bg-gray-200 hover:bg-gray-400 cursor-pointer "
-                  }`}
+                <button
+                  className={`flex items-center justify-center cursor-pointer my-10 h-[58px] text-xl text-black no-underline transition-all rounded-md shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100 duration-500`}
+                  disabled={mintCount >= maxMintCount}
                   onClick={() =>
                     mintCount >= maxMintCount
                       ? setMintCount(maxMintCount)
@@ -217,7 +211,7 @@ export default function Mint() {
                   }
                 >
                   {`+`}
-                </div>
+                </button>
               </div>
               <div className="flex items-center justify-center w-full mt-5">
                 <h1 className="text-2xl font-bold text-center text-white">
@@ -228,14 +222,14 @@ export default function Mint() {
                 <>
                   <div className="relative">
                     <div
-                      className="z-[49] relative w-full px-10 py-4 mt-10 font-bold text-center text-black transition-all duration-300 bg-white rounded-md cursor-pointer lg:w-auto hover:bg-gray-400"
+                      className="flex items-center justify-center cursor-pointer my-10 hover:translate-y-1 h-[58px] text-xl text-black no-underline transition-all rounded-md shadow-md newfont px-7 transform-origin-right bg-gradient-to-r from-green-100 to-green-400 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-100 duration-500"
                       onClick={() => handleMintFunc()}
                     >
                       Mint Now
                     </div>
-                    {whtieListMintState === true && whiteListCounts >= 50 && (
+                    {/* {whtieListMintState === true && whiteListCounts >= 50 && (
                       <div className="absolute top-0 bottom-0 left-0 right-0 z-50 bg-gray-500 rounded-md cursor-not-allowed bg-opacity-80"></div>
-                    )}{" "}
+                    )}{" "} */}
                   </div>
                   <div className="flex items-center justify-center w-full mt-2">
                     <h1 className="text-sm font-bold text-center text-white">
@@ -283,66 +277,34 @@ type NFTIMG = {
 const nftArray: NFTIMG[] = [
   {
     id: 1,
-    imgurl: "/img/nft/v4-slider-img.png",
+    imgurl: "/img/nft/v4-slider-img.jpg",
   },
   {
     id: 9,
-    imgurl: "/img/nft/v4-slider-img2.png",
+    imgurl: "/img/nft/v4-slider-img2.jpg",
   },
   {
     id: 2,
-    imgurl: "/img/nft/v4-slider-img3.png",
+    imgurl: "/img/nft/v4-slider-img3.jpg",
   },
   {
     id: 3,
-    imgurl: "/img/nft/v4-slider-img4.png",
+    imgurl: "/img/nft/v4-slider-img4.jpg",
   },
   {
     id: 4,
-    imgurl: "/img/nft/v4-slider-img5.png",
+    imgurl: "/img/nft/v4-slider-img5.jpg",
   },
   {
     id: 5,
-    imgurl: "/img/nft/v4-slider-img6.png",
+    imgurl: "/img/nft/v4-slider-img6.jpg",
   },
   {
     id: 6,
-    imgurl: "/img/nft/v4-slider-img7.png",
+    imgurl: "/img/nft/v4-slider-img7.jpg",
   },
   {
     id: 7,
-    imgurl: "/img/nft/v4-slider-img8.png",
-  },
-  {
-    id: 8,
-    imgurl: "/img/nft/v4-slider-img9.png",
-  },
-  {
-    id: 16,
-    imgurl: "/img/nft/v4-slider-img10.png",
-  },
-  {
-    id: 10,
-    imgurl: "/img/nft/v4-slider-img11.png",
-  },
-  {
-    id: 11,
-    imgurl: "/img/nft/v4-slider-img12.png",
-  },
-  {
-    id: 12,
-    imgurl: "/img/nft/v4-slider-img13.png",
-  },
-  {
-    id: 13,
-    imgurl: "/img/nft/v4-slider-img14.png",
-  },
-  {
-    id: 14,
-    imgurl: "/img/nft/v4-slider-img15.png",
-  },
-  {
-    id: 15,
-    imgurl: "/img/nft/v4-slider-img16.png",
+    imgurl: "/img/nft/v4-slider-img8.jpg",
   },
 ];

@@ -9,7 +9,7 @@ export default function About() {
       <Fade>
         <div className="2xl:w-[1440px] xl:w-[1224px] lg:w-[900px] w-full flex items-center justify-center relative flex-col px-5">
           <div className="section-header__content">
-            <h1 className="color--gradient-y text-[60px] uppercase newfont">
+            <h1 className="color--gradient-y xl:text-[60px] text-[50px] uppercase newfont">
               About us
             </h1>
           </div>

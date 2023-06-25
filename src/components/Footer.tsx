@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
         {isVisible && (
           <div
-            className="fixed bottom-10 right-10 p-3 bg-green-500 border-[1px] cursor-pointer animate-bounce rounded-full"
+            className="fixed p-3 bg-green-500 rounded-full cursor-pointer bottom-10 right-10 rounded-tr-md rounded-bl-md rounded-tl-xl rounded-br-xl animate-bounce"
             onClick={() => scrollToTop()}
           >
             <Gricon.GrLinkTop color="white" />
